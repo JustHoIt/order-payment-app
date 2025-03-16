@@ -1,6 +1,7 @@
 services:
   mysql:
     image: mysql:8.0.33
+    container_name: orderPayment
     ports:
       - 13306:3306
     volumes:
@@ -10,6 +11,6 @@ services:
       - '--collation-server=utf8mb4_unicode_ci'
       - '--lower_case_table_names=1'
     environment:
-      MYSQL_ROOT_PASSWORD:
+      MYSQL_ROOT_PASSWORD: root1234!
       MYSQL_DATABASE: fastcamp_labs
 

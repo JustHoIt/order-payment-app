@@ -1,5 +1,3 @@
-import com.github.davidmc24.gradle.plugin.avro.GenerateAvroJavaTask
-
 group = "sw.sustainable"
 version = "0.0.1-SNAPSHOT"
 
