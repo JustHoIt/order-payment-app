@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.0.33
+    ports:
+      - 13306:3306
+    volumes:
+      - /Users/park/Desktop/fastcampus-order-payment-app-master/src/main/resources/initdb:/docker-entrypoint-initdb.d
+    command:
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
+      - '--lower_case_table_names=1'
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: fastcamp_labs
+
